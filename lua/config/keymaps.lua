@@ -2,4 +2,4 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set({ "i", "v" }, "jk", "<ESC>", { desc = "Leave insert mode efficiently" })
+vim.keymap.set("i", "jk", "<ESC>", { desc = "Normal Mode" })

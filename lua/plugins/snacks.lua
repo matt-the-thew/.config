@@ -1,6 +1,24 @@
 return {
-  "folke/snacks.nvim",
-  opts = {
+  {
+    "folke/snacks.nvim",
+    opts = {
+      zen = {
+        toggles = {
+          dim = false,
+          git_signs = false,
+          diagnostics = true,
+          line_number = true,
+          relative_number = true,
+        },
+        win = {
+          backdrop = { transparent = false },
+        },
+        show = {
+          statusline = true,
+          tabline = true,
+        },
+      },
+    },
     picker = {
       sources = {
         explorer = {
