@@ -6,3 +6,5 @@ vim.opt.swapfile = false
 
 vim.opt.scrolloff = 999
 vim.opt.jumpoptions = "stack,view"
+
+vim.g.snacks_animate = false

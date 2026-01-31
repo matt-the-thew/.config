@@ -18,24 +18,23 @@ return {
           tabline = true,
         },
       },
-    },
-    picker = {
-      sources = {
-        explorer = {
-          hidden = true,
-          ignored = true,
-        },
-        files = {
-          hidden = true,
-          ignored = true,
+      picker = {
+        sources = {
+          explorer = {
+            hidden = true,
+            ignored = true,
+          },
+          files = {
+            hidden = true,
+            ignored = true,
+          },
         },
       },
-    },
-    dashboard = {
-      enabled = true,
-      preset = {
-        header = {
-          [[
+      dashboard = {
+        enabled = true,
+        preset = {
+          header = {
+            [[
                                                                        
                                                  ,,                    
 `7MMM.     ,MMF'         mm     mm `7MMF'   `7MF'db                    
@@ -48,6 +47,7 @@ return {
                                                                        
                                                                        
 ]],
+          },
         },
       },
     },
