@@ -1,5 +1,11 @@
 return {
-  { "folke/which-key.nvim", event = "VeryLazy", opts_extend = { "spec" }, opts = {
-    preset = "classic",
-  } },
+  {
+    "folke/which-key.nvim",
+    enabled = false,
+    event = "VeryLazy",
+    opts_extend = { "spec" },
+    opts = {
+      preset = "classic",
+    },
+  },
 }
