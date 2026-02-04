@@ -25,4 +25,3 @@ o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
 o.background = "dark"
-api.nvim_set_hl(0, "Normal", { bg = "#0b0b0b" })
