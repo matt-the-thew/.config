@@ -1,5 +1,6 @@
 local global = vim.g
 local o = vim.opt
+local api = vim.api
 
 o.number = true
 o.relativenumber = true
@@ -15,7 +16,7 @@ o.ruler = true
 o.mouse = "a"
 o.title = true
 o.hidden = true
-o.timeoutlen = 0
+o.timeoutlen = 500
 o.wildmenu = true
 o.showcmd = true
 o.showmatch = true
@@ -23,3 +24,5 @@ o.inccommand = "split"
 o.splitright = true
 o.splitbelow = true
 o.termguicolors = true
+o.background = "dark"
+api.nvim_set_hl(0, "Normal", { bg = "#0b0b0b" })
