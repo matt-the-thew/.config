@@ -2,6 +2,9 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      styles = {
+        transparent = false,
+      },
       zen = {
         toggles = {
           dim = false,
@@ -21,6 +24,12 @@ return {
       picker = {
         sources = {
           explorer = {
+            jump = {
+              close = true,
+            },
+            layout = {
+              preset = "default",
+            },
             hidden = true,
             ignored = true,
           },
