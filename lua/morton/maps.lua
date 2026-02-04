@@ -22,6 +22,12 @@ map("n", "<leader>r", "<CMD>Neotree focus<CR>")
 map("n", "<leader>o", "<CMD>vsplit<CR>")
 map("n", "<leader>p", "<CMD>split<CR>")
 
+-- Navigate Windows
+map("n", "<C-h>", "<C-w>h")
+map("n", "<C-l>", "<C-w>l")
+map("n", "<C-j>", "<C-w>j")
+map("n", "<C-k>", "<C-w>k")
+
 --fzf-lua
 map("n", "<leader>ff", "<cmd>FzfLua files<cr>")
 map("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>")
