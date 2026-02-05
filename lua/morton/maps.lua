@@ -34,3 +34,7 @@ map("n", "<leader>fg", "<cmd>FzfLua live_grep<cr>")
 
 -- Diagnostics
 map("n", "<leader>d", vim.diagnostic.open_float)
+
+-- Buffer navigation
+map("n", "{b", "<cmd>bp<cr>")
+map("n", "}b", "<cmd>bn<cr>")
