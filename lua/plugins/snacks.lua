@@ -24,11 +24,11 @@ return {
       picker = {
         sources = {
           explorer = {
-            jump = {
-              close = true,
-            },
             layout = {
-              preset = "default",
+              preset = "sidebar",
+              layout = {
+                position = "right",
+              },
             },
             hidden = true,
             ignored = true,
@@ -44,8 +44,6 @@ return {
         preset = {
           header = {
             [[
-                                                                       
-                                                 ,,                    
 `7MMM.     ,MMF'         mm     mm `7MMF'   `7MF'db                    
   MMMb    dPMM           MM     MM   `MA     ,V                        
   M YM   ,M MM   ,6"Yb.mmMMmm mmMMmm  VM:   ,V `7MM  `7MMpMMMb.pMMMb.  
