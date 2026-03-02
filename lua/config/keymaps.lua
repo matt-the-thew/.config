@@ -1,11 +1,11 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+local map = vim.keymap.set
+map('n', '<leader>w', ':write<CR>')
+map('n', '<leader>q', ':quit<CR>')
+map('n', '<leader>o', ':Oil<CR>')
 
-vim.keymap.set("i", "jk", "<ESC>", { desc = "Normal Mode" })
+map('n', '<leader>ff', ':Pick files<CR>')
+map('n', '<Leader>sg', function()
+  require('mini.pick').builtin.grep_live()
+end, { desc = 'Live Grep (project-wide search)' })
 
-vim.keymap.set("n", "<leader>z", "<cmd>NoNeckPain<cr>", { desc = "Toggle NoNeckPain" })
-
-vim.keymap.set({ "n", "x", "o" }, "s", "<Plug>(leap-forward)")
-vim.keymap.set({ "n", "x", "o" }, "S", "<Plug>(leap-backward)")
-vim.keymap.set("n", "gs", "<Plug>(leap-from-window)")
+map('n', '<leader>cd', vim.diagnostic.open_float)
