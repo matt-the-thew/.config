@@ -1,0 +1,36 @@
+{
+  "plugins": {
+    "catpuccin": {
+      "rev": "dba28050887c2810b5ebf9e0143b4e919bd55757",
+      "src": "https://github.com/vague2k/vague.nvim"
+    },
+    "mini.nvim": {
+      "rev": "6170f606fbdb94bf461635c47962f61dceffe496",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
+    "mini.pick": {
+      "rev": "b4351399db5043a781a32699a1bde60b747f711f",
+      "src": "https://github.com/echasnovski/mini.pick"
+    },
+    "nvim": {
+      "rev": "193e123cdbc4dd3e86db883d55349e9587f0ded6",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "a2bd1cf7b0446a7414aaf373cea5e4ca804c9c69",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "oil.nvim": {
+      "rev": "cbcb3f997f6f261c577b943ec94e4ef55108dd95",
+      "src": "https://github.com/stevearc/oil.nvim"
+    },
+    "typst-preview.nvim": {
+      "rev": "291972a39db85c5d2e76249748aba4206dfd3bc2",
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
+    },
+    "vague.nvim": {
+      "rev": "dba28050887c2810b5ebf9e0143b4e919bd55757",
+      "src": "https://github.com/vague2k/vague.nvim"
+    }
+  }
+}

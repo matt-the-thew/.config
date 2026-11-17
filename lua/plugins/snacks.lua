@@ -8,7 +8,7 @@ return {
       zen = {
         toggles = {
           dim = false,
-          git_signs = false,
+          git_signs = true,
           diagnostics = true,
           line_number = true,
           relative_number = true,
@@ -24,10 +24,11 @@ return {
       picker = {
         sources = {
           explorer = {
+            auto_open = false,
             layout = {
               preset = "sidebar",
               layout = {
-                position = "right",
+                position = "left",
               },
             },
             hidden = true,
@@ -40,20 +41,28 @@ return {
         },
       },
       dashboard = {
+        width = 40,
         enabled = true,
         preset = {
-          header = {
-            [[
-`7MMM.     ,MMF'         mm     mm `7MMF'   `7MF'db                    
-  MMMb    dPMM           MM     MM   `MA     ,V                        
-  M YM   ,M MM   ,6"Yb.mmMMmm mmMMmm  VM:   ,V `7MM  `7MMpMMMb.pMMMb.  
-  M  Mb  M' MM  8)   MM  MM     MM     MM.  M'   MM    MM    MM    MM  
-  M  YM.P'  MM   ,pm9MM  MM     MM     `MM A'    MM    MM    MM    MM  
-  M  `YM'   MM  8M   MM  MM     MM      :MM;     MM    MM    MM    MM  
-.JML. `'  .JMML.`Moo9^Yo.`Mbmo  `Mbmo    VF    .JMML..JMML  JMML  JMML.
-                                                                       
-                                                                       
-]],
+          header = [[
+          Study hard what interests you the most in the most undisciplined, 
+          irreverent and original manner possible.
+                                                  -R. Feynman
+slow is fast 
+kr was here]],
+          sections = {
+            { section = "header", padding = 2 },
+            { section = "keys", gap = 1, padding = 2 },
+            { section = "recent_files", padding = 2 },
+            { section = "startup" },
+          },
+          keys = {
+            { icon = "F ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
+            { icon = "N ", key = "n", desc = "New File", action = ":ene | startinsert" },
+            { icon = "G ", key = "g", desc = "Grep Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
+            { icon = "R ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
+            { icon = "L ", key = "l", desc = "Lazy", action = ":Lazy" },
+            { icon = "Q ", key = "q", desc = "Quit", action = ":qa" },
           },
         },
       },
