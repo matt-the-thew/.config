@@ -1,23 +1,41 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
--- Add any additional options here
+vim.opt.clipboard = 'unnamedplus' -- use system clipboard
 vim.opt.timeoutlen = 300
 vim.opt.swapfile = false
+vim.opt.mouse = 'a' -- allow mouse
 
+-- Tab
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+-- UI config
+vim.opt.termguicolors = true
 vim.opt.scrolloff = 5
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.showmode = false
+vim.opt.wrap = true -- wrap is ON by default (big text on small windows is better)
+
+-- Searching 
+vim.opt.incsearch = true
+vim.opt.hlsearch = true 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 vim.opt.jumpoptions = "stack,view"
 
 vim.g.snacks_animate = false
 
--- UI config
-vim.opt.termguicolors = true
 -- vim.opt.showtabline = 2
 
 -- Set ruler at line 95
 vim.opt.colorcolumn = "95"
 
 -- netrw config
-vim.g.netrw_banner = 0
+vim.g.netrw_banner = 1
 -- Use tree-view as the default list style
 vim.g.netrw_liststyle = 3
 -- Open files in the previous window (prevents opening new buffers in the explorer pane)
@@ -28,5 +46,3 @@ vim.g.netrw_altv = 1
 vim.g.netrw_winsize = 25
 -- Hide dotfiles by default (toggle with 'gh')
 vim.g.netrw_list_hide = ""
--- wrap is ON by default (big text on small windows is better)
-vim.opt.wrap = true
